@@ -21,24 +21,22 @@
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/uikit.min.css') }}" rel="stylesheet">
 </head>
 <body>
 <section class="navigation">
   <div class="nav-container">
     <div class="brand">
-      <a href="#!">Logo</a>
+      <a href="#!"><img src="{{asset('/images/afiblogo.png')}}"></a>
     </div>
     <nav>
       <div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
       <ul class="nav-list">
         <li>
-          <a href="#!">Home</a>
+          <a href="#!">Accueil</a>
         </li>
         <li>
-          <a href="#!">About</a>
-        </li>
-        <li>
-          <a href="#!">Services</a>
+          <a href="#!">Inscription</a>
           <ul class="nav-dropdown">
             <li>
               <a href="#!">Web Design</a>
@@ -52,10 +50,10 @@
           </ul>
         </li>
         <li>
-          <a href="#!">Pricing</a>
+          <a href="#!">Compte</a>
         </li>
         <li>
-          <a href="#!">Portfolio</a>
+          <a href="#!">Messagerie</a>
           <ul class="nav-dropdown">
             <li>
               <a href="#!">Web Design</a>

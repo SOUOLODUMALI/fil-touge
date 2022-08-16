@@ -47,13 +47,13 @@ Au fur et à mesure de l’exécution des activités, et ayant constaté que la 
   <section class="position">
   <div class="container-fluid">
     <div class="row">
-    <article>
+    <div class="articles">
       <h1>ARTICLE</h1>
       <h3>Education</h3>
 <p>Il y a environ six mois, l’AFiB offra du riz et du savon aux familles vulnérables que nous soutenons, et qui avaient particulièrement souffert des effets économiques de la pandémie de la COVID-19 en 2020. <p>
 Alors que l’association est actuellement en pleins préparatifs pour se réunir à nouveau à Djébougou et y mener diverses activités, des mères et des pères nous ont approché pour témoigner du soulagement qu’a été cette aide, alors qu’en cette période ils avaient même des difficultés à nourrir correctement leur famille et à acheter des produits de base tel que du savon. <p>
 Nous en profitons pour vous relayer leurs remerciements et nous nous joignons à eux pour dire encore MERCI pour votre précieuse générosité</p>
-    </article>
+</div>
 <aside>
 <img id="aside" src="{{asset('./images/FB_IMG_16564053778753836.jpg')}}" alt="aide">
 </aside>
