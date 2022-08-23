@@ -18,7 +18,7 @@ class CreateFieulsTable extends Migration
             $table->string('date_naissance');
             $table->string('nom');
             $table->string('prenom');
-            $table->string('telephone');
+            $table->string('telephone')->unique();
             $table->string('pass');
             $table->timestamps();
         });

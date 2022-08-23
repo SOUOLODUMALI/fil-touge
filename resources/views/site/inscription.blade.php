@@ -19,7 +19,7 @@
 
 <div class="uk-inline">
     <span class="uk-form-icon" uk-icon="icon: calendar"></span>
-    <input type="text" onfocus="(this.type= 'date')" class="uk-input" id="date_naissance" name="date_naissance" placeholder="date_naissance" value="{{ isset($fieul) ? $fieul->annee_accademique : old('date_naissance') }}">
+    <input type="text" onfocus="(this.type= 'date')" class="uk-input" id="date_naissance" name="date_naissance" placeholder="date_naissance" value="{{ isset($fieul) ? $fieul->date_naissance : old('date_naissance') }}">
 </div>
 @error('date_naissance')
 <p> {{ $message }} </p>

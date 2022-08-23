@@ -30,4 +30,5 @@ Auth::routes();
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 Route::resource('fieul', fieulController::class)->middleware(['auth']);
-Route::resource('parrain', parrainController::class)->middleware(['auth']);
+
+Route::resource('parrain', parrainController::class);

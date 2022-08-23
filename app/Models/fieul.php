@@ -9,6 +9,7 @@ class fieul extends Model
 {
     use HasFactory;
     protected $fillable  = [
+        "id",
         "date_naissance",
         "nom",
         "prenom",

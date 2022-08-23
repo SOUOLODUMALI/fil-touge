@@ -17,127 +17,100 @@
     <!-- Fonts -->
     <link rel="dns-pref etch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet">
     <link href="{{ asset('css/uikit.min.css') }}" rel="stylesheet">
+    <body>
 </head>
-<body>
-<section class="navigation">
-  <div class="nav-container">
-    <div class="brand">
-      <a href="#!"><img src="{{asset('/images/afiblogo.png')}}"></a>
-    </div>
-    <nav>
-      <div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
-      <ul class="nav-list">
-        <li>
-          <a href="#!">Accueil</a>
+<nav class="navbar navbar-expand-lg navbar-light bg-black fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="#"><img src="{{asset('./images/afiblogo.png')}}" alt="logo" width="40px" height="40px"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="{{asset('Accueil.blade.php')}}">Accueil</a>
         </li>
-        <li>
-          <a href="#!">Inscription</a>
-          <ul class="nav-dropdown">
-            <li>
-              <a href="#!">Web Design</a>
-            </li>
-            <li>
-              <a href="#!">Web Development</a>
-            </li>
-            <li>
-              <a href="#!">Graphic Design</a>
-            </li>
-          </ul>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Inscription</a>
         </li>
-        <li>
-          <a href="#!">Compte</a>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Compte</a>
         </li>
-        <li>
-          <a href="#!">Messagerie</a>
-          <ul class="nav-dropdown">
-            <li>
-              <a href="#!">Web Design</a>
-            </li>
-            <li>
-              <a href="#!">Web Development</a>
-            </li>
-            <li>
-              <a href="#!">Graphic Design</a>
-            </li>
-          </ul>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Messsagerie</a>
         </li>
-        <li>
-          <a href="#!">Contact</a>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact</a>
         </li>
       </ul>
-    </nav>
+    </div>
   </div>
-</section>
+</nav>
 
-
-
-
-             
-
-
-
-
-          
 
 <main class="py-4">
             @yield('content')
         </main>
-    
-       
-        <section class="down">
-        <footer>
-            <div class="container-fluid">
-            <div class="row">
-            
-      <div class="feet">
-        <ul>
-           <li><a href="#">A PROPOS DE NOUS</a>
-           <a href="#">L’association AFiB <br>(Avenir pour les <br>Filles du Burkina <br>Faso) soutient<br>
-            la scolarité de <br>filles et de jeunes-fille<br>s dans la région<br> 
-            de la Bougouriba,<br> au Burkina Faso. </a></li>
-        
-               
-      <div><li><a href="#">EVENEMENT RECENT</a>
-      <div><a href="#">Souvenir du premier<br> jour des « 72 heures de l’AFiB »<br>
-       célébrées l’été passé : <br>séance de sensibilisation<br> sur les <br>grossesses non désirées<br> 
-      en milieu scolaire, <br>animée par des <br>spécialistes en la 
-      <br>matière au <br>bénéfice des filleules de<br> 
-       l’AFiB et de <br>leurs parents.</a></li>
-    <li>
-      <a class="#">INFORMATION DE CONTACT</a>
-      <a href="tel:25000000 ">
-                     25 00 00 00
-                    </a>
-                
-                <a href="https://goo.gl/maps/a7Zx99VJFg1e1mhF7 ">
-                <img src="maps.JPG " alt="maps " class="maps ">
-            </a>
-            
-                    <a href="tel:77000000 ">
-                    <span class="mop "> 77 00 00 00</span>
-                    </a>
-                    
-                   
-                    <a href="mailto:AFIB@gmail.com?subject=écrivez nous! ">
-                         AFIB@gmail.com
-                    </a>
-                   
-                      <a>01 BP OUAGA 01</a></li>
-                    </ul>
-                </div>   </div></div>   
-                 
-    </section>
-    </footer> 
-    <div class="base">
-      <h4></h4>  <span> COPYRIGHT-AFIB-2022</span>
-      </div>
+        <footer class="site-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-6">
+            <h6>Actualité</h6>
+            <p class="text-justify">l'association <i>a mener une activite </i>du 15 au 20 Aout 2022 Dans le cadre de la promotion de la jeune femme.</p>
+          </div>
 
-    </div>
+          <div class="col-xs-6 col-md-3">
+            <h6>Nos valeurs</h6>
+            <ul class="footer-links">
+              <li><a href="http://scanfcode.com/category/c-language/">integrite</a></li>
+              <li><a href="http://scanfcode.com/category/front-end-development/">sociabilte</a></li>
+              <li><a href="http://scanfcode.com/category/back-end-development/">compassion</a></li>
+              <li><a href="http://scanfcode.com/category/java-programming-language/">Amour</a></li>
+              <li><a href="http://scanfcode.com/category/android/">partage</a></li>
+              <li><a href="http://scanfcode.com/category/templates/">Determination</a></li>
+            </ul>
+          </div>
+
+          <div class="col-xs-6 col-md-3">
+            <h6>Contact</h6>
+            <ul class="footer-links">
+              <li><a href="http://scanfcode.com/about/">+22651530280</a></li>
+              <li><a href="http://scanfcode.com/contact/">+22657000003</a></li>
+              <li><a href="http://scanfcode.com/contribute-at-scanfcode/">www.afib.facebbok.com</a></li>
+              <li><a href="http://scanfcode.com/privacy-policy/">afib@gmail.com</a></li>
+              <li><a href="http://scanfcode.com/sitemap/">sect 56, kadiogo Ouagadougou</a></li>
+            </ul>
+          </div>
+        </div>
+        <hr>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-sm-6 col-xs-12">
+            <p class="copyright-text">Copyright &copy; 2022 tout droits reserves par 
+         <a href="#">papiskeita</a>.
+            </p>
+          </div>
+
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <ul class="social-icons">
+              <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+              <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+              <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
+              <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>   
+            </ul>
+          </div>
+        </div>
+      </div>
+</footer>
+
     <script src="{{ asset('/js/bootstrap.bundle.min.js') }}"></script>
     <script src="{{ asset('/js/jquery.js') }}"></script>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>

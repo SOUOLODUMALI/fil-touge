@@ -14,7 +14,10 @@ class parrainController extends Controller
      */
     public function index()
     {
-        //
+        $parrain = parrain::all();
+
+
+        return view("site.parrainage", compact("parrain"));
     }
 
     /**
@@ -24,7 +27,7 @@ class parrainController extends Controller
      */
     public function create()
     {
-        //
+        return view("site.parrain");
     }
 
     /**
@@ -35,7 +38,31 @@ class parrainController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $this->validate($request, [
+          
+            "nom" => 'bail|required|',
+            "prenom" => 'bail|required',
+            'date_naissance' => 'bail|required|date|',
+            "fieul_telephone" => 'bail|required',
+            "email." => 'bail|required',
+            "password" => 'bail|required',
+        ]);
+    
+        
+      
+      
+        parrain::create([
+          
+            "nom" => $request->nom,
+            "prenom" => $request->prenom,
+            "date_naissance" => $request->date_naissance,
+            "fieul_telephone" => $request->fieul_telephone,
+            "email" => $request->email,
+            "password" => $request->password,
+        ]);
+    
+      
+        return view("site.parrain");
     }
 
     /**
@@ -57,7 +84,7 @@ class parrainController extends Controller
      */
     public function edit(parrain $parrain)
     {
-        //
+        return view("site.parrain", compact("parrain"));
     }
 
     /**
@@ -69,7 +96,28 @@ class parrainController extends Controller
      */
     public function update(Request $request, parrain $parrain)
     {
-        //
+        $request->validate([
+            "nom" => 'bail|required|',
+            "prenom" => 'bail|required',
+            'date_naissance' => 'bail|required|date|',
+            "fieul_telephone" => 'bail|required',
+            "email." => 'bail|required',
+            "password" => 'bail|required',
+
+        ]);
+
+        $parrain->update(
+            [ 
+                  
+            "nom" => $request->nom,
+            "prenom" => $request->prenom,
+            "date_naissance" => $request->date_naissance,
+            "fieul_telephone" => $request->fieul_telephone,
+            "email" => $request->email,
+            "password" => $request->password,
+            ]
+        );
+        return redirect(route("parrain.index"));
     }
 
     /**
@@ -80,6 +128,8 @@ class parrainController extends Controller
      */
     public function destroy(parrain $parrain)
     {
-        //
+        $parrain->delete();
+
+        return redirect(route('parrain.index'));
     }
 }

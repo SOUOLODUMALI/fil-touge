@@ -18,7 +18,7 @@ class CreateParrainTable extends Migration
             $table->string('nom');
             $table->string('prenom');
             $table->string('date_naissance');
-            $table->string('parrainage');
+            $table->string('fieul_telephone')->unique()->constrained();
             $table->string('email');
             $table->string('password');
             $table->timestamps();

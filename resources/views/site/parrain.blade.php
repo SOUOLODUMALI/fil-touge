@@ -44,22 +44,23 @@
 <p> {{ $message }} </p>
 @enderror
 </div>
-<div uk-form-custom="target: true">
-    <select>
-        <option></option>
-        <option></option>
-    </select>
-    <button type="button"></button>
-</div>
+<!-- <div uk-form-custom="target: true">
+   
                         <div class="uk-margin-small">
                             <div class="uk-inline">
                                 <span class="uk-form-icon" uk-icon="icon: user"></span>
-                                <type="text" class="uk-input" id="telephone" name="telephone" placeholder="telephone" value="{{ isset($parrain) ? $parrain->telephone : old('telephone') }}">
+                                <select class="form-select" id="parrainage" name="parrainage" >
+        <option value=''></option>
+        @foreach($fieul as $fieul)
+        <option value="{{$fieul->id}}">{{$fieul-> fieul}}</option>
+        @endforeach
+    </select>
                             </div>
-                            @error('telephone')
+                            </div>
+                            @error('parrainage)
                             <p> {{ $message }}</p>
                             @enderror
-                        </div>
+                        </div> -->
                         <div class="uk-margin-small">
                             <div class="uk-inline">
                                 <span class="uk-form-icon" uk-icon="icon: user"></span>
@@ -70,7 +71,7 @@
                             @enderror
                         </div>
 
-                        <div class="uk-margin-small">
+                        <!-- <div class="uk-margin-small">
                             <div class="uk-inline">
                                 <span class="uk-form-icon" uk-icon="icon: user"></span>
                                 <input type="text" class="uk-input" id="rpass" name="rpass" placeholder=" repeter votre mot de passe" value="{{ isset($parrain) ? $parrain->rpass : old('rpass') }}">
@@ -80,7 +81,7 @@
                             @enderror
                         </div>
 
-                    <br />
+                    <br /> -->
                     <div class="uk-margin">
 
 

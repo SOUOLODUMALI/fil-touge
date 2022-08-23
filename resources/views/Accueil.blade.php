@@ -59,15 +59,7 @@ Nous en profitons pour vous relayer leurs remerciements et nous nous joignons à
 </aside>
 
 </section>
-<section>
- 
- <marquee behavior="" direction="right">
- <img id="aside" src="{{asset('./images/FB_IMG_16564054188152251.jpg')}}" alt="aide ">
- <img id="aside" src="{{asset('./images/FB_IMG_16564053778753836.jpg')}}" alt="aide ">
- <img id="aside" src="{{asset('./images/FB_IMG_16564053778753836.jpg')}}" alt="aide ">
- <img id="aside" src="{{asset('./images/FB_IMG_16564053778753836.jpg')}}" alt="aide ">
- </marquee>
-</section>
+
 
 
 @endsection
