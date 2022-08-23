@@ -17,7 +17,7 @@ use Illuminate\Support\Facades\Auth;
 */
 
 Route::get('/', function () {
-    return view('accueil');
+    return view('contact');
 });
 
 
@@ -32,3 +32,4 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 Route::resource('fieul', fieulController::class)->middleware(['auth']);
 
 Route::resource('parrain', parrainController::class);
+
